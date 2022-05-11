@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    min-height: 100vh;
+
+    display: flex;
+    position: relative;
+    text-align: center;
+
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(78, 70, 70, 0.25);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header__container {
+    box-sizing: border-box;
+    max-width: 750px;
+    width: 92%;
+
+    margin: auto;
+    position: relative;
+}
+
+.header__slogan {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 1301px) {
+    .header {
+        font-size: 16px;
+        background-color: #4e4646;
+        background-image: url("https://netology-code.github.io/mq-homeworks/adaptive-layout/welcome-block/img/netology_1900.jpg");
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1300px) {
+    .header {
+        font-size: 12px;
+        background-image: url("https://netology-code.github.io/mq-homeworks/adaptive-layout/welcome-block/img/netology_1200.jpg");
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        font-size: 8px;
+        background-image: url("https://netology-code.github.io/mq-homeworks/adaptive-layout/welcome-block/img/netology_600.jpg");
+    }
+}
+
+.logo {
+    width: 18em;
+    margin-bottom: 2em;
+}
+
+.header__slogan {
+    font-size: 3em;
+}

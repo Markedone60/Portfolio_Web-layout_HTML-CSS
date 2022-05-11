@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive elements</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<div class="courses">
+    <article class="course">
+        <picture class="course__preview">
+            <source
+                srcset="https://netology-code.github.io/mq-homeworks/adaptive-images/course-list/img/front-end-mobile.jpg"
+                media="(max-width: 640px)">
+            <source
+                srcset="https://netology-code.github.io/mq-homeworks/adaptive-images/course-list/img/front-end-desktop.jpg"
+                media="(min-width: 641px)">
+            <img class="course__img"
+                src="https://netology-code.github.io/mq-homeworks/adaptive-images/course-list/img/front-end-desktop.jpg"
+                alt="Логотип для курса Frontend-разработчик">
+        </picture>
+        <div class="course__info">
+            <h3 class="course__name">Профессия frontend-разработчик</h3>
+            <div class="course__description">
+                <p>
+                    Освойте одну из самых востребованных профессий на сегодняшний день. Добавьте в свой арсенал три
+                    самые популярные технологии: HTML, CSS и JavaScript и создавайте сайты и интерактивные
+                    веб-приложения, доступные на большинстве платформ.
+                </p>
+            </div>
+        </div>
+    </article>
+    <article class="course">
+        <picture class="course__preview">
+            <source
+                srcset="https://netology-code.github.io/mq-homeworks/adaptive-images/course-list/img/fullstack-designer-mobile.jpg"
+                media="(max-width: 640px)">
+            <source
+                srcset="https://netology-code.github.io/mq-homeworks/adaptive-images/course-list/img/fullstack-designer-desktop.jpg"
+                media="(min-width: 641px)">
+            <img class="course__img"
+                src="https://netology-code.github.io/mq-homeworks/adaptive-images/course-list/img/fullstack-designer-desktop.jpg"
+                alt="Логотип для курса Fullstack-дизайнер">
+        </picture>
+        <div class="course__info">
+            <h3 class="course__name">Профессия fullstack дизайнер</h3>
+            <div class="course__description">
+                <p>
+                    Fullstack-дизайнер способен самостоятельно разработать концепцию проекта и выполнить всю работу по
+                    её воплощению: создать прототипы, разработать дизайн, нарисовать все компоненты и сверстать их,
+                    используя HTML и CSS, а также курировать работу разработчиков по интеграции интерфейсов в
+                    приложение.
+                </p>
+            </div>
+        </div>
+    </article>
+    <article class="course">
+        <picture class="course__preview">
+            <source
+                srcset="https://netology-code.github.io/mq-homeworks/adaptive-images/course-list/img/web-developer-mobile.jpg"
+                media="(max-width: 640px)">
+            <source
+                srcset="https://netology-code.github.io/mq-homeworks/adaptive-images/course-list/img/web-developer-desktop.jpg"
+                media="(min-width: 641px)">
+            <img class="course__img"
+                src="https://netology-code.github.io/mq-homeworks/adaptive-images/course-list/img/web-developer-desktop.jpg"
+                alt="Логотип для курса Веб-разработчик">
+        </picture>
+        <div class="course__info">
+            <h3 class="course__name">Профессия веб-разработчик</h3>
+            <div class="course__description">
+                <p>
+                    Станьте универсальным специалистом, имеющим в своём арсенале два языка программирования: JavaScript
+                    и PHP, и способным самостоятельно создать современный интерактивный сайт по техническому заданию и
+                    дизайн-макету.
+                </p>
+            </div>
+        </div>
+    </article>
+</div>

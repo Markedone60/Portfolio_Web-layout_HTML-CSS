@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color: #000000;
+    font-family: Open Sans, sans-serif;
+}
+
+.card {
+    position: relative;
+    color: #ffffff;
+    min-height: 50px;
+}
+
+.card:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.45);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.card__img {
+    max-width: 100%;
+    display: block;
+}
+
+.card__body {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.card__name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25em;
+    text-shadow: 0 0 2px #000000;
+}
+
+@media (min-width: 480px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 479px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+    .card {
+        width: 50%;
+    }
+
+    .card:nth-child(3n) {
+        width: 100%;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+    .card {
+        width: 50%;
+    }
+
+    .card:nth-child(n+3):nth-child(-n+5),
+    .card:nth-child(n+8):nth-child(-n+10),
+    .card:nth-child(n+13):nth-child(-n+15),
+    .card:nth-child(n+18):nth-child(-n+20) {
+        width: 33.3%;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {
+    .card {
+        width: 25%;
+    }
+
+    .card:nth-child(n+5):nth-child(-n+6),
+    .card:nth-child(n+11):nth-child(-n+12) {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1281px) {
+    .card {
+        width: 20%;
+    }
+
+    .card:nth-child(n+6):nth-child(-n+8),
+    .card:nth-child(n+14):nth-child(-n+16) {
+        width: 33.3%;
+    }
+
+    .card:nth-child(n+17):nth-child(-n+20) {
+        width: 25%;
+    }
+}
